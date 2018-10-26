@@ -1,0 +1,14 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "Build and Run Debug",
+    "type": "shell",
+    "command": "cd 3DEngineCpp && make debug && yes | cp -f -r res bin/Debug && DRI_PRIME=1 ./bin/Debug/3DGameEngine",
+    "group": {
+      "kind": "build",
+      "isDefault": true
+    }
+  }]
+}
